@@ -1,15 +1,13 @@
-# reddit-daily-monitor
+# Personal Apartment Hunt Script
 
-just a little script i made to track rental prices across different cities. i was curious if rent in certain areas is going up or down and couldn't find a good source, so i just pull from r/landlord and r/realestate directly.
+A simple, read-only script for my personal use. I'm currently looking to relocate and rent a new apartment in a different city. Instead of scrolling Reddit every morning, this script fetches the latest posts from r/realestate and r/Renters and prints a short digest to my terminal.
 
-it looks for posts mentioning locations and rent amounts, saves them to a json file. nothing fancy. i read through the results manually and keep notes in a spreadsheet.
+No data is stored. No database. It just prints matching posts and exits.
 
-maybe i'll turn this into something more useful later, maybe not.
+Runs locally once a day, makes fewer than 10 API calls total.
 
 ## how to run
 
 ```bash
 node monitor.js
 ```
-
-results go into `results.json`
